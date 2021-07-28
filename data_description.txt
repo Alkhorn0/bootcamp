@@ -1,0 +1,523 @@
+MSSubClass: Identifies the type of dwelling involved in the sale.	(판매에 관련된 주거 유형 식별)
+
+        20	1-STORY 1946 & NEWER ALL STYLES			1층 1946 이후 모든 스타일
+        30	1-STORY 1945 & OLDER				1층 1945 이전 
+        40	1-STORY W/FINISHED ATTIC ALL AGES			1층 모든 연령대에 걸쳐 완성된 다락방이 있음
+        45	1-1/2 STORY - UNFINISHED ALL AGES			1-1/2 층 미완성 전 연령대
+        50	1-1/2 STORY FINISHED ALL AGES			1-1/2 층 완성 전 연령대
+        60	2-STORY 1946 & NEWER				2층 1946년 이후
+        70	2-STORY 1945 & OLDER				2층 1945년 이전
+        75	2-1/2 STORY ALL AGES				2-1/2층 모든 연령대
+        80	SPLIT OR MULTI-LEVEL				분할 또는 다중 레벨
+        85	SPLIT FOYER					분할 로비
+        90	DUPLEX - ALL STYLES AND AGES			이중 - 모든 스타일 및 연령
+       120	1-STORY PUD (Planned Unit Development) - 1946 & NEWER	1층 PUD(계획단위개발) - 1946년 이후
+       150	1-1/2 STORY PUD - ALL AGES				1-1/2층 PUD(계획단위개발) - 모든 연령층
+       160	2-STORY PUD - 1946 & NEWER				2층 PUD(계획단위개발) - 1946년 이후
+       180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER			PUD - 다단계 - INCL 분할 LEV/FOYER
+       190	2 FAMILY CONVERSION - ALL STYLES AND AGES		2 패밀리 전환 - 모든 스타일 및 연령
+
+MSZoning: Identifies the general zoning classification of the sale.	(판매의 일반 영역 분류를 식별)
+		
+       A	Agriculture					A 농업
+       C	Commercial					C 커머셜
+       FV	Floating Village Residential				FV 부유식 마을 주택
+       I	Industrial						I 산업
+       RH	Residential High Density				RH 주거용 고밀도
+       RL	Residential Low Density				RL 주거용 저밀도
+       RP	Residential Low Density Park 			RP 주거용 저밀도 공원
+       RM	Residential Medium Density				RM 주거용 중밀도
+	
+LotFrontage: Linear feet of street connected to property		건물에 연결된 거리의 선형 피트
+
+LotArea: Lot size in square feet				평방 피트 단위의 로트 크기
+
+Street: Type of road access to property			건물에 대한 도로 접근 유형
+
+       Grvl		Gravel					비포장
+       Pave	Paved					포장
+       	
+Alley: Type of alley access to property			자산에 대한 골목 액세스 유형
+
+       Grvl		Gravel					비포장
+       Pave	Paved					포장
+       NA 	No alley access					골목 접근 금지
+		
+LotShape: General shape of property				건물(땅, 부동산, 부지)의 일반적인 모양
+
+       Reg	Regular						규칙적(일반적)
+       IR1	Slightly irregular					약간 불규칙
+       IR2	Moderately Irregular				적당히 불규칙
+       IR3	Irregular						불규칙
+       
+LandContour: Flatness of the property				건물(부동산)의 평탄도
+
+       Lvl	Near Flat/Level						거의 평탄/평탄함
+       Bnk	Banked - Quick and significant rise from street grade to building	길에서 건물쪽으로 가파르게 기울어짐
+       HLS	Hillside - Significant slope from side to side			좌우로 상당한 기울기
+       Low	Depression					움푹함
+		
+Utilities: Type of utilities available					사용 가능한 유틸리티 유형
+		
+       AllPub	All public Utilities (E,G,W,& S)			모든 공공 유틸리티(E,G,W,&S)
+       NoSewr	Electricity, Gas, and Water (Septic Tank)		전기, 가스 및 물(액체가스를 담는 탱크)
+       NoSeWa	Electricity and Gas Only				전기 및 가스만 해당
+       ELO		Electricity only					전기만 해당
+	
+LotConfig: Lot configuration					부지 구성
+
+       Inside	Inside lot					내부 부지
+       Corner	Corner lot				코너 부지
+       CulDSac	Cul-de-sac				막다른 골목				
+       FR2	Frontage on 2 sides of property			건물 2사이드의 정면
+       FR3	Frontage on 3 sides of property			건물 3사이드의 정면
+	
+LandSlope: Slope of property				부지의 경사
+		
+       Gtl		Gentle slope				완만한 경사
+       Mod	Moderate Slope				적당한 경사
+       Sev		Severe Slope				심한 경사
+	
+Neighborhood: Physical locations within Ames city limits		Ames시 경계 내의 물리적 위치(고유명사)
+
+       Blmngtn	Bloomington Heights
+       Blueste	Bluestem
+       BrDale	Briardale
+       BrkSide	Brookside
+       ClearCr	Clear Creek
+       CollgCr	College Creek
+       Crawfor	Crawford
+       Edwards	Edwards
+       Gilbert	Gilbert
+       IDOTRR	Iowa DOT and Rail Road
+       MeadowV	Meadow Village
+       Mitchel	Mitchell
+       Names	North Ames
+       NoRidge	Northridge
+       NPkVill	Northpark Villa
+       NridgHt	Northridge Heights
+       NWAmes	Northwest Ames
+       OldTown	Old Town
+       SWISU	South & West of Iowa State University
+       Sawyer	Sawyer
+       SawyerW	Sawyer West
+       Somerst	Somerset
+       StoneBr	Stone Brook
+       Timber	Timberland
+       Veenker	Veenker
+			
+Condition1: Proximity to various conditions				다양한 조건에 대한 접근성
+	
+       Artery	Adjacent to arterial street				간선도로 인접
+       Feedr	Adjacent to feeder street				피더도로 인접 (주요 고속도로 및 고속도로로 교통량을 공급하는 보조도로)
+       Norm	Normal						일반
+       RRNn	Within 200' of North-South Railroad			남북철도 200' 이내
+       RRAn	Adjacent to North-South Railroad			남북철도 인접
+       PosN	Near positive off-site feature--park, greenbelt, etc.	공원, 그린벨트 등 긍정적인 오프사이트 기능 근처
+       PosA	Adjacent to postive off-site feature			긍정적인 오프사이트 기능에 인접
+       RRNe	Within 200' of East-West Railroad			동서철도 200' 이내
+       RRAe	Adjacent to East-West Railroad			동서철도 인접
+	
+Condition2: Proximity to various conditions (if more than one is present)	다양한 조건에 대한 근접성(둘 이상이 있는 경우)
+		
+       Artery	Adjacent to arterial street
+       Feedr	Adjacent to feeder street	
+       Norm	Normal	
+       RRNn	Within 200' of North-South Railroad
+       RRAn	Adjacent to North-South Railroad
+       PosN	Near positive off-site feature--park, greenbelt, etc.
+       PosA	Adjacent to postive off-site feature
+       RRNe	Within 200' of East-West Railroad
+       RRAe	Adjacent to East-West Railroad
+	
+BldgType: Type of dwelling							주거유형
+		
+       1Fam	Single-family Detached					단독주택
+       2FmCon	Two-family Conversion; originally built as one-family dwelling	두 가족 주택으로 전환; 원래 단독주택으로 지어진
+       Duplx	Duplex							듀플렉스(한 필지에 두 가구가 나란히 지어진 형태의 집)
+       TwnhsE	Townhouse End Unit					타운하우스 끝 유닛(타운하우스는 아파트와 단독주택 장점을 취한 구조로 2~3층짜리 단독주택을 연속적으로 붙인 형태)
+       TwnhsI	Townhouse Inside Unit					타운하우스 안쪽 유닛
+	
+HouseStyle: Style of dwelling						주거 스타일
+		
+       1Story	One story						1층
+       1.5Fin	One and one-half story: 2nd level finished
+       1.5Unf	One and one-half story: 2nd level unfinished
+       2Story	Two story
+       2.5Fin	Two and one-half story: 2nd level finished
+       2.5Unf	Two and one-half story: 2nd level unfinished
+       SFoyer	Split Foyer
+       SLvl	Split Level
+	
+OverallQual: Rates the overall material and finish of the house
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average
+       5	Average
+       4	Below Average
+       3	Fair
+       2	Poor
+       1	Very Poor
+	
+OverallCond: Rates the overall condition of the house
+
+       10	Very Excellent
+       9	Excellent
+       8	Very Good
+       7	Good
+       6	Above Average	
+       5	Average
+       4	Below Average	
+       3	Fair
+       2	Poor
+       1	Very Poor
+		
+YearBuilt: Original construction date
+
+YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)
+
+RoofStyle: Type of roof
+
+       Flat	Flat
+       Gable	Gable
+       Gambrel	Gabrel (Barn)
+       Hip	Hip
+       Mansard	Mansard
+       Shed	Shed
+		
+RoofMatl: Roof material
+
+       ClyTile	Clay or Tile
+       CompShg	Standard (Composite) Shingle
+       Membran	Membrane
+       Metal	Metal
+       Roll	Roll
+       Tar&Grv	Gravel & Tar
+       WdShake	Wood Shakes
+       WdShngl	Wood Shingles
+		
+Exterior1st: Exterior covering on house
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       BrkComm	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast	
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       WdShing	Wood Shingles
+	
+Exterior2nd: Exterior covering on house (if more than one material)
+
+       AsbShng	Asbestos Shingles
+       AsphShn	Asphalt Shingles
+       BrkComm	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       CemntBd	Cement Board
+       HdBoard	Hard Board
+       ImStucc	Imitation Stucco
+       MetalSd	Metal Siding
+       Other	Other
+       Plywood	Plywood
+       PreCast	PreCast
+       Stone	Stone
+       Stucco	Stucco
+       VinylSd	Vinyl Siding
+       Wd Sdng	Wood Siding
+       WdShing	Wood Shingles
+	
+MasVnrType: Masonry veneer type
+
+       BrkCmn	Brick Common
+       BrkFace	Brick Face
+       CBlock	Cinder Block
+       None	None
+       Stone	Stone
+	
+MasVnrArea: Masonry veneer area in square feet
+
+ExterQual: Evaluates the quality of the material on the exterior 
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+ExterCond: Evaluates the present condition of the material on the exterior
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+Foundation: Type of foundation
+		
+       BrkTil	Brick & Tile
+       CBlock	Cinder Block
+       PConc	Poured Contrete	
+       Slab	Slab
+       Stone	Stone
+       Wood	Wood
+		
+BsmtQual: Evaluates the height of the basement
+
+       Ex	Excellent (100+ inches)	
+       Gd	Good (90-99 inches)
+       TA	Typical (80-89 inches)
+       Fa	Fair (70-79 inches)
+       Po	Poor (<70 inches
+       NA	No Basement
+		
+BsmtCond: Evaluates the general condition of the basement
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical - slight dampness allowed
+       Fa	Fair - dampness or some cracking or settling
+       Po	Poor - Severe cracking, settling, or wetness
+       NA	No Basement
+	
+BsmtExposure: Refers to walkout or garden level walls
+
+       Gd	Good Exposure
+       Av	Average Exposure (split levels or foyers typically score average or above)	
+       Mn	Mimimum Exposure
+       No	No Exposure
+       NA	No Basement
+	
+BsmtFinType1: Rating of basement finished area
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+		
+BsmtFinSF1: Type 1 finished square feet
+
+BsmtFinType2: Rating of basement finished area (if multiple types)
+
+       GLQ	Good Living Quarters
+       ALQ	Average Living Quarters
+       BLQ	Below Average Living Quarters	
+       Rec	Average Rec Room
+       LwQ	Low Quality
+       Unf	Unfinshed
+       NA	No Basement
+
+BsmtFinSF2: Type 2 finished square feet
+
+BsmtUnfSF: Unfinished square feet of basement area
+
+TotalBsmtSF: Total square feet of basement area
+
+Heating: Type of heating
+		
+       Floor	Floor Furnace
+       GasA	Gas forced warm air furnace
+       GasW	Gas hot water or steam heat
+       Grav	Gravity furnace	
+       OthW	Hot water or steam heat other than gas
+       Wall	Wall furnace
+		
+HeatingQC: Heating quality and condition
+
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       Po	Poor
+		
+CentralAir: Central air conditioning
+
+       N	No
+       Y	Yes
+		
+Electrical: Electrical system
+
+       SBrkr	Standard Circuit Breakers & Romex
+       FuseA	Fuse Box over 60 AMP and all Romex wiring (Average)	
+       FuseF	60 AMP Fuse Box and mostly Romex wiring (Fair)
+       FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)
+       Mix	Mixed
+		
+1stFlrSF: First Floor square feet
+ 
+2ndFlrSF: Second floor square feet
+
+LowQualFinSF: Low quality finished square feet (all floors)
+
+GrLivArea: Above grade (ground) living area square feet
+
+BsmtFullBath: Basement full bathrooms
+
+BsmtHalfBath: Basement half bathrooms
+
+FullBath: Full bathrooms above grade
+
+HalfBath: Half baths above grade
+
+Bedroom: Bedrooms above grade (does NOT include basement bedrooms)
+
+Kitchen: Kitchens above grade
+
+KitchenQual: Kitchen quality
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       	
+TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
+
+Functional: Home functionality (Assume typical unless deductions are warranted)
+
+       Typ	Typical Functionality
+       Min1	Minor Deductions 1
+       Min2	Minor Deductions 2
+       Mod	Moderate Deductions
+       Maj1	Major Deductions 1
+       Maj2	Major Deductions 2
+       Sev	Severely Damaged
+       Sal	Salvage only
+		
+Fireplaces: Number of fireplaces
+
+FireplaceQu: Fireplace quality
+
+       Ex	Excellent - Exceptional Masonry Fireplace
+       Gd	Good - Masonry Fireplace in main level
+       TA	Average - Prefabricated Fireplace in main living area or Masonry Fireplace in basement
+       Fa	Fair - Prefabricated Fireplace in basement
+       Po	Poor - Ben Franklin Stove
+       NA	No Fireplace
+		
+GarageType: Garage location
+		
+       2Types	More than one type of garage
+       Attchd	Attached to home
+       Basment	Basement Garage
+       BuiltIn	Built-In (Garage part of house - typically has room above garage)
+       CarPort	Car Port
+       Detchd	Detached from home
+       NA	No Garage
+		
+GarageYrBlt: Year garage was built
+		
+GarageFinish: Interior finish of the garage
+
+       Fin	Finished
+       RFn	Rough Finished	
+       Unf	Unfinished
+       NA	No Garage
+		
+GarageCars: Size of garage in car capacity
+
+GarageArea: Size of garage in square feet
+
+GarageQual: Garage quality
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+GarageCond: Garage condition
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+PavedDrive: Paved driveway
+
+       Y	Paved 
+       P	Partial Pavement
+       N	Dirt/Gravel
+		
+WoodDeckSF: Wood deck area in square feet
+
+OpenPorchSF: Open porch area in square feet
+
+EnclosedPorch: Enclosed porch area in square feet
+
+3SsnPorch: Three season porch area in square feet
+
+ScreenPorch: Screen porch area in square feet
+
+PoolArea: Pool area in square feet
+
+PoolQC: Pool quality
+		
+       Ex	Excellent
+       Gd	Good
+       TA	Average/Typical
+       Fa	Fair
+       NA	No Pool
+		
+Fence: Fence quality
+		
+       GdPrv	Good Privacy
+       MnPrv	Minimum Privacy
+       GdWo	Good Wood
+       MnWw	Minimum Wood/Wire
+       NA	No Fence
+	
+MiscFeature: Miscellaneous feature not covered in other categories
+		
+       Elev	Elevator
+       Gar2	2nd Garage (if not described in garage section)
+       Othr	Other
+       Shed	Shed (over 100 SF)
+       TenC	Tennis Court
+       NA	None
+		
+MiscVal: $Value of miscellaneous feature
+
+MoSold: Month Sold (MM)
+
+YrSold: Year Sold (YYYY)
+
+SaleType: Type of sale
+		
+       WD 	Warranty Deed - Conventional
+       CWD	Warranty Deed - Cash
+       VWD	Warranty Deed - VA Loan
+       New	Home just constructed and sold
+       COD	Court Officer Deed/Estate
+       Con	Contract 15% Down payment regular terms
+       ConLw	Contract Low Down payment and low interest
+       ConLI	Contract Low Interest
+       ConLD	Contract Low Down
+       Oth	Other
+		
+SaleCondition: Condition of sale
+
+       Normal	Normal Sale
+       Abnorml	Abnormal Sale -  trade, foreclosure, short sale
+       AdjLand	Adjoining Land Purchase
+       Alloca	Allocation - two linked properties with separate deeds, typically condo with a garage unit	
+       Family	Sale between family members
+       Partial	Home was not completed when last assessed (associated with New Homes)

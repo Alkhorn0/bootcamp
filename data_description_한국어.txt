@@ -1,0 +1,573 @@
+이름: AmesHousing.txt 
+유형: 인구 
+크기: 관측치 2930개, 변수 82개 기사 
+제목: Ames Iowa: Boston Housing 데이터 세트의 대안 
+
+설명 요약: 데이터 세트에는 판매된 개별 주거용 부동산에 대한 평가 가치를 계산하는 데 사용되는 Ames Assessor's Office의 정보가 포함되어 있습니다. 2006년에서 2010년 사이에 Ames, IA에서. 
+
+출처: 
+Ames, Iowa Assessor's Office 
+
+변수 설명: 
+탭 문자는 데이터 파일에서 변수를 구분하는 데 사용됩니다. 데이터에는 23개의 명목, 23개의 순서, 14개의 불연속 변수 및 20개의 연속 변수(및 2개의 추가 관찰 식별자)를 포함하는 82개의 열이 있습니다. 
+
+차수(이산): 관찰 번호
+
+PID(공칭): 소포 식별 번호 - 소포 검토를 위해 시 웹 사이트에서 사용할 수 있습니다. 
+
+MS 하위 분류(명목): 판매와 관련된 주거 유형을 식별합니다.	
+
+       1 층 020 및 1,946 NEWER ALL 스타일 
+       030 1 층 1,945 및 OLDER 
+       040 1 층의 W / 완료 ATTIC ALL AGES 
+       045 1-1 / 2 STORY - 끝나지 않은 ALL AGES 
+       050 1-1 / 2 STORY FINISHED ALL AGES 
+       060 2- 층 1946 및 
+       최신 070 2 층 1945 및 이전 
+       075 2-1/2 이야기 모든 연령대 
+       080 분할 또는 다중 레벨 
+       085 분할 로비 
+       090 이중 - 모든 스타일 및 PUD1 
+       -STORY 120
+       150 1-1/2 STORY PUD - 전 
+       연령 
+       160 2-STORY PUD - 1946 및 최신 180 PUD - 다중 레벨 - SPLIT LEV/FOYER 
+       190 2 FAMILY CONVERSION - 모든 스타일 및 연령 
+
+분류 일반: MS Zoning을 식별합니다. 판매의. 
+		
+       A 농업 
+       C 상업용 
+       FV 수상 마을 주거용 
+       I 산업 
+       RH 주거용 고밀도 
+       RL 주거용 저밀도 
+       RP 주거용 저밀도 공원 
+       RM 주거용 중간 밀도 
+	
+부지 전면(연속): 부동산에 연결된 거리의 선형 피트 
+
+부지 면적(연속): 정사각형의 부지 크기 피트
+
+Street(Nominal): 부동산으로 
+
+       진입 하는 도로 유형 Grvl Gravel	 
+       Pave Paved 
+       	
+Alley(Nominal): 부동산으로 
+
+       진입 하는 골목 유형 Grvl Gravel 
+       Pave Paved 
+       NA 골목 진입 불가 
+		
+부지 모양(Ordinal): 부동산의 일반적인 모양 
+
+       Reg 일반	 
+       IR1 약간 불규칙한 
+       IR2 약간 불규칙한 
+       IR3 불규칙한 
+       
+토지 등고선(공칭): 부동산의 평탄도 
+
+       Lvl Near Flat/Level	 
+       Bnk Banked - 도로 경사에서 건물까지 빠르고 상당한 상승 
+       HLS Hillside - 좌우로 상당한 경사 
+       낮은 우울증
+		
+Utilities(Ordinal): 사용 가능한 유틸리티 유형 
+		
+       AllPub 모든 public Utilities(E,G,W,&S)	 
+       NoSewr 전기, 가스 및 수도(정화조) 
+       NoSeWa 전기 및 가스 전용 
+       ELO 전기 전용	 
+	
+Lot Config(Nominal): Lot 구성 
+
+       내부 내부의 많은 
+       코너 코너 많은 
+       CulDSac 막힌 골목 
+       FR2를 바라보고있는 부동산 재산의 2 개면에 
+       재산의 3 개면에 FR3를 바라보고있는 부동산 
+	
+토지 슬로프 (서수) : 재산의 기울기 
+		
+       GTL 완만 한 경사 
+       모 보통 기울기	 
+       SEV 심한 슬로프 
+	
+환경 (공칭) : 물리 Ames 도시 경계 내 위치(지도 사용 가능)
+
+       Blmngtn 블루밍턴 하이츠 
+       Blueste Bluestem 
+       BrDale Briardale 
+       BrkSide 브룩 
+       ClearCr 클리어 크릭 
+       CollgCr 대학 크릭 
+       Crawfor 크로포드 
+       에드워즈 에드워즈 
+       길버트 길버트 
+       녹색당 녹색당 
+       GrnHill 그린 힐즈 
+       IDOTRR 아이오와 DOT 및 철도 도로 
+       Landmrk 랜드 마크 
+       MeadowV 초원 마을 
+       미첼 미첼 
+       이름 북한 에임스 
+       NoRidge 노스 리지 
+       NPkVill 노스 파크 빌라 
+       NridgHt 노스 리지 하이츠 
+       NWAmes Northwest Ames 
+       OldTown 구시가지
+       SWISU South & West of Iowa State University 
+       Sawyer Sawyer 
+       SawyerW Sawyer West 
+       Somerst Somerset 
+       StoneBr Stone Brook 
+       Timber Timberland 
+       Veenker Veenker 
+			
+조건 1(명목): 다양한 조건에 근접 
+	
+       Artery arterial street에 
+       인접 Feedr Feeder Street에 인접	 
+       Norm Normal	 
+       RRNn North 200' 이내 
+       -South Railroad RRAn 남북 철도에 인접 
+       PosN 가까운 포지티브 오프 사이트 지형지물--공원, 그린벨트 등 
+       PosA 포지티브 오프 사이트 지형에 인접 
+       RRNe East-West Railroad의 200' 이내
+       RRAe 동서 철도 
+	
+조건 2에 인접 (공칭): 다양한 조건에 근접(둘 이상이 있는 경우) 
+		
+       Artery 간선 도로에 
+       인접 Feedr 급류 도로에 인접	 
+       Norm Normal	 
+       RRNn 남북 철도의 200' 이내 
+       RRAn 북쪽에 인접 -South Railroad 
+       PosN Near positive off-site feature--park, greenbelt, etc. 
+       PosA postive off-site feature에 
+       인접 RRNe 
+       동서 철도 RRAe 의 200' 이내 동서 철도 
+	
+빌딩에 인접 유형(공칭): 유형 주거 
+		
+       1Fam 단독 주택 단독	 
+       2FmCon 2가구 전환; 원래 단독주택으로 지어진
+       복층 복층 
+       TwnhsE 연립 주택 End Unit 
+       TwnhsI 연립 주택 내부 단위 
+	
+주택 스타일(공칭): 주거 스타일 
+	
+       1층 1층 
+       1.5Fin 1.5층 1.5층 마감 2층 
+       1.5Unf 1층 1/2층: 2층 미완성 
+       2층 2층 
+       2.5 2층 
+       반층 : 2층 마감 2.5Unf 2층 
+       반층 : 2층 미완성 SFoyer Split Foyer 
+       SLvl Split Level 
+	
+전체 품질(Ordinal): 집의 전체 자재 및 마감을 평가 
+
+       10 매우 우수 
+       9 우수 
+       8 매우 좋음 
+       7 좋음
+       6 위 평균 
+       5 평균 
+       이하 4 평균 
+       3 공정 
+       이 불량 
+       1 미흡 
+	
+전체 COND (서수) : 요금 집안의 전반적인 상태 
+
+       (10) 매우 우수 
+       9 우수 
+       8 매우 좋음 
+       7 좋은 
+       6 위 평균	 
+       5 평균 
+       평균 이하 4	 
+       3 공정 
+       이 불량 
+       1 매우 나쁨 
+		
+건축 연도(분리형): 원래 건설 날짜 
+
+수정/추가 연도(분리형): 리모델링 날짜(개조 또는 추가가 없는 경우 건설 날짜와 동일) 
+
+지붕 스타일(공칭): 지붕 유형 
+
+       평면 평면
+       Gable Gable 
+       Gambrel Gabrel (Barn) 
+       Hip Hip 
+       Mansard Mansard 
+       Shed Shed 
+		
+Roof Matl (Nominal): 지붕 재료 
+
+       ClyTile Clay 또는 Tile 
+       CompShg Standard (Composite) Shingle 
+       Membrane Membrane 
+       Metal 
+       Roll Roll 
+       Tar&Grv Gravel & Tar 
+       WdShake Wood Shakes 
+       WdShngl Wood Shingles 
+		
+Exterior 공칭): 주택의 외부 덮개 
+
+       AsbShng Asbestos Shingles 
+       AsphShn Asphalt Shingles 
+       BrkComm Brick Common 
+       BrkFace Brick Face 
+       CBlock Cinder Block 
+       CemntBd Cement Board
+       HdBoard Hard Board 
+       ImStucc Imitation Stucco 
+       MetalSd Metal Siding 
+       Other Other 
+       Plywood Plywood 
+       PreCast PreCast	 
+       Stone Stone 
+       Stucco Stucco 
+       VinylSd Vinyl Siding 
+       Wd Sdng Wood Siding 
+       WdShing Wood Shingles 
+	
+Exterior 2(공칭): 집의 외부 덮개(둘 이상의 재료인 경우) 
+
+       AsbShng 
+       Asbe 아스팔트 대상 포진 
+       BrkComm 벽돌 일반 
+       BrkFace 벽돌 얼굴 
+       CBlock 콘크리트 블록 
+       CemntBd 시멘트 보드 
+       HdBoard 하드 보드 
+       ImStucc 모조 치장 벽토
+       MetalSd 금속 사이딩 
+       기타 기타 
+       합판 합판 
+       프리캐스트 프리캐스트 
+       석재 
+       치장 벽토 치장 벽토 
+       VinylSd 비닐 사이딩 
+       Wd Sdng 목재 사이딩 
+       WdShing 목재 대상 포진 
+	
+Mas Vnr 유형(공칭): 석조 베니어 유형 
+
+       BrkCmn Brick Common 
+       BrkFace Brick Face 
+       Area CBlock 
+Mas Vnr 
+       없음 
+       Stone 
+	( 연속): 석조 베니어판 면적(제곱피트) 
+
+Exter Qual(Ordinal): 외부 재료의 품질을 평가합니다. 
+		
+       Ex 우수 
+       Gd 양호 
+       TA 평균/일반
+       Fa Fair 
+       Po Poor 
+		
+Exter Cond (Ordinal): 외장재의 현황 평가 
+		
+       Ex Excellent 
+       Gd Good 
+       TA Average/Typical 
+       Fa Fair 
+       Po Poor 
+		
+Foundation (Nominal): 기초의 종류 
+		
+       BrkTil Brick & Tile 
+       CBlock Cinder Block 
+       PConc poured Contrete	 
+       Slab Slab 
+       Stone Stone 
+       Wood Wood 
+		
+Bsmt Qual(Ordinal): 지하실 높이 평가 
+
+       Ex Excellent(100+인치)	 
+       Gd Good(90-99인치) 
+       TA Typical(80-89인치) 
+       Fa Fair(70-79인치)
+       Po 나쁨(<70인치 
+       NA 지하실 없음 
+		
+Bsmt Cond(서수): 지하실 의 일반적인 상태를 평가합니다. 
+
+       Ex 우수 
+       Gd 좋음 
+       TA 일반 - 약간의 습기 허용 
+       Fa 보통 - 습기 또는 약간의 균열 또는 침강 
+       Po 나쁨 - 심각한 균열, 침하 또는 wetness 
+       NA 지하실 없음 
+	
+Bsmt 노출(서수): 산책로 또는 정원 수준의 벽을 나타냅니다. 
+
+       Gd 양호 노출 
+       Av 평균 노출(분할 수준 또는 로비는 일반적으로 평균 이상 점수)	 
+       Mn 최소 노출 
+       없음 노출 없음 해당 
+       없음 지하실 없음 
+	
+BsmtFin 유형 1(서수): 지하실 마감 면적 등급
+
+       GLQ Good Living Quarters 
+       ALQ Average Living Quarters 
+       BLQ 평균 이하 Living Quarters	 
+       Rec Average Rec Room 
+       LwQ Low Quality 
+       Unf Unfinshed 
+       NA 지하실 없음 
+		
+BsmtFin SF 1(연속): 유형 1 마감 평방 피트 
+
+BsmtFinType 2(서수): 지하실 마감 면적 등급(만약에 여러 유형) 
+
+       GLQ Good Living Quarters 
+       ALQ Average Living Quarters 
+       BLQ 평균 이하 Living Quarters	 
+       Rec Average Rec Room 
+       LwQ Low Quality 
+       Unf Unfinshed 
+       NA 지하실 없음 
+
+BsmtFin SF 2(연속): 유형 2 마감 평방 피트
+
+Bsmt Unf SF(연속): 지하실의 미완성 제곱피트 
+
+Total Bsmt SF(연속): 지하실의 총 제곱피트 
+
+난방(공칭): 난방 유형 
+		
+       Floor Floor Furnace 
+       GasA 가스 강제 온풍 로 
+       GasW 가스 온수 또는 증기 열 
+       중력로	 
+       OthW 가스 이외의 뜨거운 물 또는 증기 열 
+벽로 
+       가열 
+		QC(Ordinal): 난방 품질 및 상태 
+
+       Ex 우수 
+       Gd 양호 
+       TA 평균/일반 
+       Fa 보통 
+       Po 나쁨 
+		
+중앙 공기(공칭): 중앙 에어컨 
+
+       N 아니오 
+       Y 예
+		
+전기(서수): 전기 시스템 
+
+       SBrkr 표준 회로 차단기 및 Romex 
+       FuseA 60 AMP 이상의 퓨즈 박스 및 모든 Romex 배선(평균)	 
+       FuseF 60 AMP 퓨즈 박스 및 대부분 Romex 배선(공정) 
+       FuseP 60 AMP 퓨즈 박스 및 대부분 노브 및 튜브 배선( 나쁨) 
+       혼합 혼합 
+		
+1층 SF(연속): 1층 제곱피트 
+ 
+2 층 SF(연속) : 2층 제곱피트 
+
+Low Qual Fin SF(연속): 저품질 마감 제곱피트(모든 층) 
+
+Gr Liv Area(연속): 지상(지상) 거실 공간 평방 피트 
+
+Bsmt Full Bath(Discrete): 지하 전체 욕실 
+
+Bsmt Half Bath(Discrete): 지하 절반 욕실
+
+전체 욕실(분리형): 등급 이상의 전체 욕실 
+
+절반 욕실(분리형): 등급 이상의 절반 욕실 
+
+침실(분리형): 등급 이상의 침실(지하실 침실은 포함하지 않음) 
+
+주방(분리형): 등급 이상의 주방 
+
+KitchenQual(Ordinal): 주방 품질 
+
+       예 우수 
+       하나님 좋은 
+       TA 일반 / 평균 
+       빠 페어 
+       포 불량 
+       	
+TotRmsAbvGrd (이산) : 등급 위의 총 객실 (욕실 포함되지 않습니다) 
+
+(서수) 기능 : 홈 기능 (공제가 보증하지 않는 일반 가정) 
+
+       통상 일반적인 기능 
+       Min1 마이너 공제 한 
+       Min2 경미한 공제 2 
+       Mod Moderate Deductions
+       Maj1 주요 공제 1 
+       Maj2 주요 공제 2 
+       Sev 심하게 손상된 
+       인양만 
+		
+벽난로(개별): 벽난로 수 
+
+FireplaceQu(서수): 벽난로 품질 
+
+       Ex 우수 - 뛰어난 석조 벽난로 
+       Gd 양호 - 메인 레벨의 석조 벽난로 
+       TA Average - 메인의 조립식 벽난로 거실 또는 지하실의 석조 벽난로 
+       Fa Fair - 지하실의 조립식 벽난로 
+       Po Poor - Ben Franklin Stove 
+       NA 벽난로 없음 
+		
+차고 유형(공칭): 차고 위치 
+		
+       2종류 하나 이상의 차고 유형 
+       Attchd 집에 부착
+       Basment Basement Garage 
+       BuiltIn Built-In(집의 차고 부분 - 일반적으로 차고 위에 공간이 있음) 
+       CarPort Car Port 
+       Detchd Detached from home 
+       NA 차고 없음 
+		
+차고 Yr Blt(분리형): 차고가 지어진 연도 
+		
+Garage Finish(Ordinal): 차고의 내부 마감 차고 
+
+       지느러미 마감 
+       RFn 러프 마감	 
+       미완성 미완성 
+       NA 없음 차고 
+		
+차(개별): 차 용량의 차고 크기 
+
+차고 영역(연속): 차고(평방피트) 크기 
+
+차고 품질(서수): 차고 품질 
+
+       Ex 우수 
+       Gd 양호 
+       TA 일반/ 평균 
+       파 페어
+       Po 나쁨 
+       NA 차고 없음 차고 
+		
+조건(서수): 차고 상태 
+
+       Ex 우수 
+       Gd 양호 
+       TA 일반/평균 
+       Fa 보통 
+       Po 나쁨 
+       NA 차고 없음 
+		
+포장 도로(서수): 포장된 차도 
+
+       Y 포장 
+       P 부분 포장 
+       N 흙/자갈 
+		
+목재 데크 SF(연속) ): 우드 데크 면적(제곱피트) 
+
+Open Porch SF(Continuous): 개방형 
+
+베란다( 제곱피트) Enclosed Porch(Continuous): 밀폐된 베란다(제곱피트) 
+
+3-Ssn Porch(Continuous): 삼계절 베란다(제곱피트) 
+
+Screen Porch (연속): 스크린 베란다 면적(제곱피트)
+
+수영장 면적(연속): 제곱피트의 수영장 면적 
+
+수영장 QC(서수): 수영장 품질 
+		
+       Ex 우수 
+       Gd 양호 
+       TA 평균/일반 
+       Fa 보통 
+       NA 없음 수영장 
+		
+울타리(서수): 울타리 품질 
+		
+       GdPrv 양호 프라이버시 
+       MnPrv 최소 프라이버시 
+       GdWo Good Wood 
+       MnWw 최소 목재/철사 
+       NA 울타리 없음 
+	
+기타 기능(공칭): 다른 범주에서 다루지 않는 기타 기능 
+		
+       Elevator 
+       Gar2 2nd Garage(차고 섹션에 설명되지 않은 경우) 
+       기타 기타 
+       창고 창고(100 SF 이상) 
+       TenC 테니스 코트 해당 
+       없음 없음
+		
+기타 가치(연속): $기타 기능의 가치 
+
+판매 월(MM) 
+
+판매 연도(개별): 판매 연도(YYYY) 
+
+판매 유형(명목): 판매 유형 
+		
+       WD 보증 증서 - 기존 
+       CWD 보증 증서 - 현금 
+       VWD 보증 증서 - VA Loan 
+       New Home이 방금 건설 및 판매됨 
+       COD 법원 직원 증서/부동산 
+       사기 계약 15% 계약금 일반 조건 
+       ConLw 계약 낮은 계약금 및 낮은 이율 
+       ConLI 계약 낮은 이자 
+       ConLD 계약 낮은 다운 
+       기타 
+		
+판매 조건(명목) ): 판매 조건 
+
+       일반 일반 판매
+       비정상적인 판매 - 거래, 압류, 공매도 
+       AdjLand 인접 토지 구매 
+       할당 할당 - 별도의 증서가 있는 두 개의 연결된 속성, 일반적으로 차고 유닛이 있는 콘도	 
+       가족 구성원 간의 가족 판매 
+       마지막 평가 시 부분 주택이 완료되지 않음(새 주택과 
+		
+연결됨) (연속): 판매 가격 $$ 
+
+특별 참고 사항:
+강사가 학생에게 데이터를 제공하기 전에 데이터 세트에서 제거할 수 있는 5가지 관찰이 있습니다(판매가 대 GR LIV 영역의 플롯이 이를 빠르게 나타냄). 그 중 3개는 실제 이상값(실제 시장 가치를 나타내지 않을 가능성이 높은 부분 판매)이고 2개는 단순히 비정상적인 판매(매우 큰 주택 가격이 상대적으로 적절함)입니다. 학생에게 할당하기 전에 데이터 세트에서 4000평방피트 이상의 주택을 제거하는 것이 좋습니다(이 5가지 비정상적인 관찰을 제거함). 
+
+데이터 비하인드 스토리:
+이 데이터 세트는 학부 회귀 과정의 학기말 프로젝트의 목적으로 구성되었습니다. 원본 데이터(Ames Assessor's Office에서 직접 입수)는 세금 평가 목적으로 사용되지만 주택 판매 가격 예측에 직접적으로 활용됩니다. 데이터에 포함된 정보 유형은 일반적인 주택 구매자가 구매하기 전에 알고 싶어하는 것과 유사하며 학생들은 대부분의 변수를 간단하고 이해할 수 있어야 합니다. 
+
+교육적 참고 사항: 
+다중 회귀에 익숙하지 않은 강사는 회귀 모델링에서 발견된 대부분의 주요 문제를 검토하는 이전 JSE 문서와 함께 이 데이터 세트를 사용하기를 원할 수 있습니다.
+
+Kuiper, S.(2008), "다중 회귀 소개: 귀하의 자동차 가치는 얼마입니까?", Journal of Statistics Education Volume 16, Number 3(2008). 
+
+이 기사에서 논의된 다중 회귀와 관련된 일반적인 문제 외에도 이 특정 데이터 세트는 모델의 목적이 수행되는 모델링 유형에 어떤 영향을 미칠 수 있는지 논의할 수 있는 몇 가지 기회를 제공합니다. 이 데이터의 사용자는 부동산 가격과 직접적으로 관련된 다른 JSE 기사를 검토할 수도 있습니다. 
+
+Pardoe, I.(2008), "부동산 데이터를 사용한 주택 가격 모델링", Journal of Statistics Education Volume 16, Number 2(2008).
+
+한 가지 문제는 등분산성과 가정 위반에 관한 것입니다. 기사에 포함된 그래프는 판매 가격에 따라 변동이 증가하는 이분산성을 나타내는 것으로 보이며 이 문제는 주택 및 부지 크기에만 초점을 맞춘 많은 단순 주택 가격 모델에서 분명합니다. 이 위반은 응답 변수(판매 가격)를 변환하여 완화할 수 있지만 결과 방정식은 적합치(판매 가격(로그 또는 제곱근 달러))를 해석하기 어렵습니다. 이 상황은 강사가 이 가정 위반을 수정하지 않을 때의 비용(편향된 추정기, 잘못된 통계 테스트 등)과 이점(사용 용이성)에 대해 이야기할 기회를 제공합니다. 모델을 구축하는 목적이 단순히 일반 구매자 또는 부동산 중개인이 앉아서 집의 판매 가격을 추정할 수 있도록 하는 것이라면, 그러한 변환은 당면한 작업에 불필요하거나 부적절할 수 있습니다. 이 문제는 데이터 마이닝, 예측 모델 및 공식 통계 추론 간의 대조 및 비교에 대한 논의로 이어질 수도 있습니다.
+
+모델의 의도된 사용과 밀접하게 관련된 두 번째 문제는 이상치 및 비정상적인 관찰을 처리하는 것입니다. 일반적으로 저는 학생들에게 데이터 포인트가 선험적 기대치(또는 다른 데이터 포인트)와 일치하지 않는다는 이유로 데이터 포인트를 버리지 말라고 지시합니다. 저는 더 많은 청중과 공유할 연구 목적으로 데이터를 분석하는 상황에서 이 점을 강력하게 강조합니다. 또는 목적이 "전형적인" 판매를 추정하기 위해 공통 사용 모델을 다시 생성하는 것이라면 모델러에게 가장 유익하지 않은 관찰(예: 압류 또는 가족 판매)을 제거하는 것이 가장 좋습니다. 
+
+참조:
+데이터 세트 내의 개별 주택은 데이터 세트에서 찾은 Parcel ID(PID)를 통해 Ames City Assessor 웹페이지에서 직접 참조할 수 있습니다. 이것은 명목 값(숫자가 아님)이므로 웹 사이트의 데이터 입력 필드에 선행 0이 포함되어야 합니다. 데이터베이스에 대한 액세스는 Ames 사이트(http://www.cityofames.org/assessor/)에서 "부동산 검색"을 클릭하거나 Beacon(http://beacon.schneidercorp.com/Default)에 액세스하여 얻을 수 있습니다. aspx) 웹사이트에서 해당 필드에 Iowa 및 Ames를 입력합니다. 모든 이웃의 위치를 ​​보여주는 도시 지도는 Ames 사이트에서도 볼 수 있으며 "Maps"를 클릭한 다음 "Residential Assessment Neighborhoods (City of Ames)"를 클릭하여 액세스할 수 있습니다. 
+
+제출자: 
+Dean De Cock 
+Truman State University
+100 E. Normal St., Kirksville, MO, 63501 
+decock@truman.edu
